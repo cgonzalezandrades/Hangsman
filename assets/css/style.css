@@ -1,0 +1,47 @@
+
+.main{
+    background-color: black;
+    margin-top: auto;
+    text-align: center;
+    color: white;
+}
+
+h3{
+    font-size: 200px;
+    text-align: center;
+}
+
+.jumbotron{
+    padding-top: 0px;
+    background-color: black;
+}
+
+.left{
+   background-color: black; 
+}
+
+.right{
+    background-color: black;
+    color: white;
+}
+
+#currentWord{
+    font-size: 10px;
+}
+
+
+.button{
+    background-color: aquamarine;
+    padding: 16px 40px 34px 84px;
+    
+}
+
+.left{
+    background-color: black;
+    padding-top: 10px;
+}
+
+button{
+    
+    padding-top: 10px;
+}
