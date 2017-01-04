@@ -1,47 +1,46 @@
-
-.main{
-    background-color: black;
-    margin-top: auto;
-    text-align: center;
-    color: white;
+/*
+body {
+  background-color: aqua;
 }
+*/
 
-h3{
-    font-size: 200px;
-    text-align: center;
+* {
+    margin: 0;
 }
-
-.jumbotron{
-    padding-top: 0px;
-    background-color: black;
+html, body {
+    height: 100%;
 }
-
-.left{
-   background-color: black; 
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
 }
-
-.right{
-    background-color: black;
-    color: white;
-}
-
-#currentWord{
-    font-size: 10px;
+ .push {
+    height: 142px; /* .push must be the same height as .footer */
 }
 
 
-.button{
-    background-color: aquamarine;
-    padding: 16px 40px 34px 84px;
-    
+
+#footer-content{
+text-align: center;
+  margin-top: 100px;
 }
 
-.left{
-    background-color: black;
-    padding-top: 10px;
+#jumbotron-title{
+  text-align: center;
+}
+.game-title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 
-button{
-    
-    padding-top: 10px;
+#nintendo-logo{
+  margin-bottom: 10px;
+}
+
+.restart-button-area{
+  text-align: center;
+  margin-top: 50px;
 }

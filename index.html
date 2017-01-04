@@ -1,69 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
 
 <head>
-    <meta charset="UTF-8">
 
-    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-    <link href="assets/css/reset.css" rel="stylesheet"></link>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"></link>
-    <link href="assets/css/style.css" rel="stylesheet"></link>
-    <script src="assets/javascript/game.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
 
-    <!--<link href="assets/audio/Ashley's%20Song.mp3"-->
+  <link href="assets/css/reset.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="./assets/words.js" type="text/javascript"></script>
+  <script src="./assets/javaScript.js" type="text/javascript"></script>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+  <title>Hangsman Reloaded</title>
 
-    <title>Hangsman</title>
 </head>
 
+
 <body>
+  <div class="wrapper">
 
-    <div class="jumbotron">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-12 main">
-                    <h1> Press any key to start</h1>
-                </div>
-
-                <!--
-                <div class="col-lg-4 button">
-                    <button class="btn btn-default btn-lg dropdown-toggle" id="click" type="button" aria-haspopup="true" aria-expanded="false">
-                        Click me to play again! <span class="caret"></span>
-                    </button>
-                </div>
--->
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 left">
-                    <img src="" id="picture" class="img-responsive photo">
-
-                    <!--                    another col-->
-                </div>
-
-                <div class="col-md-6 right">
-
-                    <p id="wins">
-                        </span>Wins <span id="iWin"> </p>
-                    <p id="currentWord"><h2>Current Word: <span id="placeHolder"></span></h2>
-                    </p>
-                    <p id="letterGuessed">
-                        <h2>Letters Already Guessed: <span id="letters"></span></h2></p>
-                    <p id="guessesRemaining">
-                        <h2>Number of guesses remaining: </h2></p>
-    <p><h3><span id="remaining"></span></h3></p>
-
-
-                </div>
-            </div>
+    <div class="container">
+      <div class="row jumbotron">
+        <div class="col-sm-4">
+          <img src="images/mario.png" width="30%;">
         </div>
-    </div>
+        <div id="jumbotron-title col-sm-8">
+          <h2> Hangsman<span><img id="nintendo-logo" src="images/nintendo-log.png " width="15%" ></span>Edition</h2>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class=" game-title col-sm-12">
+          <p>
+            <h1>Guess the word below. Im giving you some clue with the spaces marked as the spaced required to get the <span style="color:#ed323d">word</span> !</h1>
+          </p>
+        <p><h5>Hint: is one of your favorite nintento characters </h5></p>
+        </div>
+      </div>
+
+
+      <div class="row">
+
+        <div class="col-sm-6 col-md-offset-2">
+          <div id="chances">
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div id="letter-holder"></div>
+        </div>
+
+      </div>
+  
+  <div class="row restart-button-area">
+<!--    <button type="button" class="btn btn-primary">Play Again</button>-->
+  </div>
+  
+  
+  
 
     </div>
+  
+    <div class="push"></div>
+  </div>
 
+  <div class="footer">
+
+    <div id="footer-content">
+      <h5>Carlos Gonzalez</h5>
+    </div>
+
+</div>
 
 </body>
-
-</html>
