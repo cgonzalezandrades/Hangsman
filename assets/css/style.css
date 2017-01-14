@@ -1,46 +1,72 @@
-/*
-body {
-  background-color: aqua;
-}
-*/
-
 * {
-    margin: 0;
+  margin: 0;
 }
-html, body {
-    height: 100%;
+
+html,
+body {
+  height: 100%;
 }
+
+body {
+
+  
+  
+  
+}
+
 .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
-}
- .push {
-    height: 142px; /* .push must be the same height as .footer */
-}
-
-
-
-#footer-content{
-text-align: center;
-  margin-top: 100px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -142px;
+   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("../../images/backgroundImage.jpg");
+  background-size: cover;
+  background-position: center;
+/*  background-repeat: no-repeat;*/
+  /* the bottom margin is the negative value of the footer's height */
+  
 }
 
-#jumbotron-title{
+.push {
+  height: 142px;
+  /* .push must be the same height as .footer */
+}
+
+#footer-content {
   text-align: center;
+  margin-top: 100px;
+  color: white;
 }
+
+hr{
+ border-color: black;
+  border-width: medium;
+}
+
+#jumbotron-title {
+  text-align: center;
+
+}
+.jumbotron{
+    background-color: white;
+}
+
 .game-title {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 60px;
+  color: white;
 }
 
-#nintendo-logo{
+.game-area{
+  color: white;
+}
+
+#nintendo-logo {
   margin-bottom: 10px;
 }
 
-.restart-button-area{
+.restart-button-area {
   text-align: center;
   margin-top: 50px;
 }
