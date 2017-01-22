@@ -117,7 +117,7 @@ document.onkeydown = function (event) {
 
     //Write to the DOM the guessRemaining
     $('#chances').html('<h2>Guess Remaining:  ' + guessRemaining + '</h2>');
-    $('#chances').append('<h2>Words Guess:  ' + keyPressedList.join(" ") + '</h2>');
+    $('#chances').append('<h2>Words Guessed:  ' + keyPressedList.join(" ") + '</h2>');
 
     //if the guess remaining is 0 that means the player lost.
   } else if (guessRemaining == 0) {
