@@ -11,7 +11,7 @@ var buttonNotCreated = true;
 
 // setKeyList function check if the word is correct or not.
 function setKeyList(key) {
-  // Loop through the keyPressedList Array as many times as big is the array and if one of the key matches one of the letters in the placeholder array dont take a guess remaining.  
+  // Loop through the keyPressedList Array as many times as big is the array and if one of the key matches one of the letters in the placeholder array dont take a guess remaining.
   for (var i = 0; i < keyPressedList.length; i++) {
 
     if (!isLetterGuessed) {
@@ -23,7 +23,7 @@ function setKeyList(key) {
       }
     }
   }
-  //isLetterGuesses prevents subtracting the a guess remaining in case a letter is more than one in the array  
+  //isLetterGuesses prevents subtracting the a guess remaining in case a letter is more than one in the array
   isLetterGuessed = false;
 }
 
@@ -50,10 +50,10 @@ function playGame() {
   //append to the DOM
   $('#letter-holder').append($letterHolder);
 
-  
+
   $('#chances').html('<h2>Guess Remaining:  ' + guessRemaining + '</h2>');
-  
-  $('#chances').append('<h2>Words Guess:  ' + keyPressedList.join(" ") + '</h2>');
+
+  $('#chances').append('<h2>Words Guessed:  ' + keyPressedList.join(" ") + '</h2>');
 
 }
 
@@ -100,7 +100,7 @@ document.onkeydown = function (event) {
     //Add new content to the DOM by adding characters from 'placeholderArray' to ltterHolder ID
     $('#letter-holder').html('<h2>' + placeholderArray.join(" ") + '</h2>');
 
-    //if both arrays match then it goes to the playAgain funtion 
+    //if both arrays match then it goes to the playAgain funtion
     if (placeholderArray.join("") == wordToGuessArray.join("")) {
 
       var playerWon = true;
@@ -129,9 +129,9 @@ document.onkeydown = function (event) {
   $('.restart-button').click(function () {
     $('#letter-holder').empty();
     $('.restart-button-area').empty();
-    
 
-    //resets guessRemaining to 12 
+
+    //resets guessRemaining to 12
     guessRemaining = 12;
     keyPressedList =[];
 
